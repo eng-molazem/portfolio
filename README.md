@@ -1,9 +1,9 @@
 # Mohammad Molazem — Portfolio
 
-A React + Vite portfolio with an animated 3D background, light/dark mode (light by default),
-full English/Arabic support with automatic RTL layout, and a **Projects** section that pulls
-live from GitHub — every public repo you push shows up automatically, with its `README.md`
-rendered as the project's details.
+A React + Vite portfolio with a typewriter hero, an animated code-symbol background, a
+cursor-following light trail, light/dark mode, full English/Arabic support with automatic RTL
+layout, and a **Projects** section that pulls live from GitHub — every public repo you push
+shows up automatically, with its `README.md` rendered as the project's details.
 
 ## Run it locally
 
@@ -65,6 +65,5 @@ so every component repaints automatically when the theme changes.
 - **React + Vite** — app shell and fast dev/build
 - **Tailwind CSS** — styling and the color theme
 - **Framer Motion** — scroll/entrance animations
-- **React Three Fiber + drei** — the floating 3D shapes in the hero section
 - **react-icons** — skill and social icons
 - **react-markdown + remark-gfm** — renders each project's GitHub README
