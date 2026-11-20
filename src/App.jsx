@@ -7,11 +7,13 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import CodeBackground from './components/CodeBackground'
+import CursorGlow from './components/CursorGlow'
 
 export default function App() {
   return (
     <div className="relative min-h-screen bg-paper text-ink selection:bg-gold-300/40 selection:text-ink">
       <CodeBackground />
+      <CursorGlow />
 
       <div className="relative z-10">
         <Navbar />

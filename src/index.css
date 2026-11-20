@@ -85,6 +85,39 @@ html[dir='rtl'] body {
   font-family: 'Cairo', 'Tajawal', ui-sans-serif, system-ui, sans-serif;
 }
 
+.cursor-echo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--size, 60px);
+  height: var(--size, 60px);
+  margin-left: calc(var(--size, 60px) / -2);
+  margin-top: calc(var(--size, 60px) / -2);
+  border-radius: 9999px;
+  background: radial-gradient(circle, color-mix(in srgb, var(--c-gold-icon) 55%, var(--c-violet-icon)) 0%, transparent 72%);
+  opacity: calc(var(--fade, 0.5) * 0.4);
+  mix-blend-mode: soft-light;
+  will-change: transform;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  margin-inline-start: 2px;
+  animation: blink 0.9s step-start infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.dot-grid {
+  --mx: 15%;
+  --my: 15%;
+  background-image: radial-gradient(circle, var(--c-violet-icon) 2.2px, transparent 2.2px);
+  background-size: 20px 20px;
+  -webkit-mask-image: radial-gradient(280px circle at var(--mx) var(--my), rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4) 65%, rgba(0, 0, 0, 0.18) 100%);
+  mask-image: radial-gradient(280px circle at var(--mx) var(--my), rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4) 65%, rgba(0, 0, 0, 0.18) 100%);
+}
+
 .code-symbol {
   position: absolute;
   bottom: -8%;

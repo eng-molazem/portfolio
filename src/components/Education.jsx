@@ -11,8 +11,10 @@ export default function Education() {
   return (
     <section id="education" className="relative py-28">
       <div className="mx-auto max-w-4xl px-6">
-        <span className="text-xs tracking-widest text-accent-gold uppercase font-semibold">{t('education.kicker')}</span>
-        <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-ink">{t('education.title')}</h2>
+        <div className="text-center lg:text-start">
+          <span className="text-xs tracking-widest text-accent-gold uppercase font-semibold">{t('education.kicker')}</span>
+          <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-ink">{t('education.title')}</h2>
+        </div>
 
         <div className="mt-14 relative border-s border-border ps-8 space-y-12">
           {Array.isArray(items) &&

@@ -11,6 +11,7 @@ export const translations = {
     },
     hero: {
       badge: 'Open to work · Remote · Any country',
+      greeting: "Hi, I'm",
       name: 'Mohammad Molazem',
       roles: ['AI Specialist', 'Full-Stack Developer', 'Computer Engineering Student'],
       tagline:
@@ -84,6 +85,7 @@ export const translations = {
       viewOnGithub: 'View on GitHub',
       loadingReadme: 'Loading README from GitHub…',
       noReadme: 'No README or description available for this project yet.',
+      showMore: 'Show more',
     },
     contact: {
       kicker: 'Contact',
@@ -110,6 +112,7 @@ export const translations = {
     },
     hero: {
       badge: 'متاح للعمل · عن بُعد · أي دولة',
+      greeting: 'مرحباً، أنا',
       name: 'محمد ملازم',
       roles: ['متخصص في الذكاء الاصطناعي', 'مطوّر ويب شامل', 'طالب هندسة حاسوب'],
       tagline:
@@ -183,6 +186,7 @@ export const translations = {
       viewOnGithub: 'عرض على GitHub',
       loadingReadme: 'جارٍ تحميل الـ README من GitHub…',
       noReadme: 'لا يوجد ملف README أو وصف متاح لهذا المشروع بعد.',
+      showMore: 'عرض المزيد',
     },
     contact: {
       kicker: 'تواصل',

@@ -26,10 +26,11 @@ export default function About() {
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6 }}
           variants={fadeUp}
+          className="text-center lg:text-start"
         >
           <span className="text-xs tracking-widest text-accent-gold uppercase font-semibold">{t('about.kicker')}</span>
           <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-ink">{t('about.title')}</h2>
-          <p className="mt-6 max-w-3xl text-ink-soft leading-relaxed">{t('about.body')}</p>
+          <p className="mt-6 max-w-3xl mx-auto lg:mx-0 text-ink-soft leading-relaxed">{t('about.body')}</p>
         </motion.div>
 
         <motion.div

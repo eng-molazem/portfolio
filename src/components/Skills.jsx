@@ -77,16 +77,18 @@ export default function Skills() {
   return (
     <section id="skills" className="relative py-28 bg-paper-soft/60">
       <div className="mx-auto max-w-6xl px-6">
-        <span className="text-xs tracking-widest text-accent-violet uppercase font-semibold">{t('skills.kicker')}</span>
-        <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-ink">{t('skills.title')}</h2>
+        <div className="text-center lg:text-start">
+          <span className="text-xs tracking-widest text-accent-violet uppercase font-semibold">{t('skills.kicker')}</span>
+          <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-ink">{t('skills.title')}</h2>
+        </div>
 
         <div className="mt-12 space-y-10">
           <div>
-            <h3 className="mb-4 text-sm font-semibold text-ink-faint uppercase tracking-wide">{t('skills.technical')}</h3>
+            <h3 className="mb-4 text-sm font-semibold text-ink-faint uppercase tracking-wide text-center lg:text-start">{t('skills.technical')}</h3>
             <SkillGrid items={technicalIcons} labels={labels} />
           </div>
           <div>
-            <h3 className="mb-4 text-sm font-semibold text-ink-faint uppercase tracking-wide">{t('skills.soft')}</h3>
+            <h3 className="mb-4 text-sm font-semibold text-ink-faint uppercase tracking-wide text-center lg:text-start">{t('skills.soft')}</h3>
             <SkillGrid items={softIcons} labels={labels} />
           </div>
         </div>
