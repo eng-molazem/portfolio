@@ -1,0 +1,104 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --c-paper: #faf7f1;
+  --c-paper-soft: #f1e7d6;
+  --c-card: #ffffff;
+  --c-border: rgba(36, 31, 41, 0.08);
+  --c-overlay: rgba(36, 31, 41, 0.45);
+
+  --c-ink: #241f29;
+  --c-ink-soft: #5c5564;
+  --c-ink-faint: #8b8494;
+
+  --c-gold-text: #785824;
+  --c-gold-icon: #96702f;
+  --c-violet-text: #6d28d9;
+  --c-violet-icon: #7c3aed;
+}
+
+.dark {
+  --c-paper: #16121e;
+  --c-paper-soft: #1f1a2c;
+  --c-card: #231d31;
+  --c-border: rgba(255, 255, 255, 0.08);
+  --c-overlay: rgba(10, 8, 14, 0.65);
+
+  --c-ink: #f3eefb;
+  --c-ink-soft: #c7bfd6;
+  --c-ink-faint: #93899f;
+
+  --c-gold-text: #e0c17e;
+  --c-gold-icon: #cda766;
+  --c-violet-text: #c4b5fd;
+  --c-violet-icon: #a78bfa;
+}
+
+@theme {
+  --color-paper: var(--c-paper);
+  --color-paper-soft: var(--c-paper-soft);
+  --color-card: var(--c-card);
+  --color-border: var(--c-border);
+  --color-overlay: var(--c-overlay);
+
+  --color-ink: var(--c-ink);
+  --color-ink-soft: var(--c-ink-soft);
+  --color-ink-faint: var(--c-ink-faint);
+
+  --color-accent-gold: var(--c-gold-text);
+  --color-accent-gold-icon: var(--c-gold-icon);
+  --color-accent-violet: var(--c-violet-text);
+  --color-accent-violet-icon: var(--c-violet-icon);
+
+  --color-gold-50: #fbf5e9;
+  --color-gold-100: #f5e8c7;
+  --color-gold-200: #ecd49c;
+  --color-gold-300: #e0c17e;
+  --color-gold-400: #cda766;
+  --color-gold-500: #b4873f;
+  --color-gold-600: #96702f;
+  --color-gold-700: #785824;
+  --color-gold-800: #5a4119;
+  --color-gold-900: #3c2b11;
+
+  --font-display: 'Sora', 'Cairo', ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html[dir='rtl'] body {
+  font-family: 'Cairo', 'Tajawal', ui-sans-serif, system-ui, sans-serif;
+}
+
+.code-symbol {
+  position: absolute;
+  bottom: -8%;
+  font-family: 'Courier New', ui-monospace, monospace;
+  font-weight: 700;
+  opacity: 0;
+  animation-name: code-rise;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes code-rise {
+  0%   { transform: translate(0, 0); opacity: 0; }
+  8%   { opacity: 0.35; }
+  92%  { opacity: 0.35; }
+  100% { transform: translate(var(--drift), -115vh); opacity: 0; }
+}

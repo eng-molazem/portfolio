@@ -1,0 +1,30 @@
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import About from './components/About'
+import Skills from './components/Skills'
+import Education from './components/Education'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import CodeBackground from './components/CodeBackground'
+
+export default function App() {
+  return (
+    <div className="relative min-h-screen bg-paper text-ink selection:bg-gold-300/40 selection:text-ink">
+      <CodeBackground />
+
+      <div className="relative z-10">
+        <Navbar />
+        <main className="relative">
+          <Hero />
+          <About />
+          <Skills />
+          <Education />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </div>
+  )
+}
